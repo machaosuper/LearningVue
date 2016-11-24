@@ -1,5 +1,23 @@
 import Vue from 'vue';
-import Router from './Routes';
+import store from './store';
+import vuex from './vuex.vue';
+
+
+new Vue({
+	el:'#app',
+	store,
+	render: h => h(vuex)
+})
+
+
+
+
+// import Router from './Routes';
+// import tranistion from './tranistion.vue'
+// new Vue({
+// 	el:'#app',
+// 	render: xx => xx(tranistion)
+// })
 // import App from './App';
 
 // Vue.use(VueRouter);
